@@ -10,7 +10,7 @@ const STORE = {
         "Can be transmitted from animals to humans",
         "Threatens to wipe out a species",
       ],
-      correctAnswer: "C. Can be transmitted from animals to humans", //rationale
+      correctAnswer: "Can be transmitted from animals to humans", //rationale
     },
     {
       question: "Orthostatic hypotension is:",
@@ -20,7 +20,7 @@ const STORE = {
         "Lowered blood pressure caused by standing up",
         "Poor circulation in the hands and feet",
       ],
-      correctAnswer: "C. Lowered blood pressure caused by standing up", //rationale transitions in 'dissolves into focus'
+      correctAnswer: "Lowered blood pressure caused by standing up", //rationale transitions in 'dissolves into focus'
     },
     // {
     //   question: 'Your doctor diagnoses you with Bromodosis after a recent doctor\'s visit, what do you have?',
@@ -31,7 +31,7 @@ const STORE = {
     //     'A fasting regimen'
     //   ],
     //   correctAnswer:
-    //     'C. Lowered blood pressure caused by standing up', //rationale
+    //     'Lowered blood pressure caused by standing up', //rationale
     // },
     // {
     //   question: 'What can be described by the condition hyperlordosis?',
@@ -42,7 +42,7 @@ const STORE = {
     //     'An exaggerated curve in the lower back'
     //   ],
     //   correctAnswer:
-    //     'D. An exaggerated curve in the lower back' //rationale
+    //     'An exaggerated curve in the lower back' //rationale
     // },
     // //have an alert message hover under with an explanation to each answer
     // {
@@ -54,7 +54,7 @@ const STORE = {
     //     'A suspected carcinogenic component of mobile phones'
     //   ],
     //   correctAnswer:
-    //     'A. An air pollutant emitted by vehicles' //rationale
+    //     'An air pollutant emitted by vehicles' //rationale
     // },
     // {
     //   question: 'What are idiopathies?',
@@ -65,7 +65,7 @@ const STORE = {
     //     'A series of opportunistic bacterial infections'
     //   ],
     //   correctAnswer:
-    //     'C. Diseases of unknown origins' //rationale
+    //     'Diseases of unknown origins' //rationale
     // },
     // {
     //   question: 'The “recovery position” is the recommended posture for which of the following?',
@@ -76,7 +76,7 @@ const STORE = {
     //     'Sitting with an injured ankle'
     //   ],
     //   correctAnswer:
-    //     'A. Placing someone who is unconscious but breathing' //rationale
+    //     'Placing someone who is unconscious but breathing' //rationale
     // },
     // {
     //   question: '*Bonus Question*: Any guess on what Brassica oleracea is? (You may be surpised of the answer)',
@@ -87,7 +87,7 @@ const STORE = {
     //     'Vegetable species'
     //   ],
     //   correctAnswer:
-    //     'D. Vegetable species' //rationale
+    //     'Vegetable species' //rationale
     // }
   ],
 };
