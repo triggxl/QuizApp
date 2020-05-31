@@ -1,35 +1,23 @@
 let questionCount = 0;
 let currentScore = 0;
 let currentQuestion = 0;
-// let correctAnswer = "";
-
-// function getCurrentQuestion() {
-//   // console.log(sto)
-//   return STORE.questions[questionCount].question;
-// }
-// function getCurrentAnswers() {
-//   return STORE.questions[questionCount].answers;
-// }
+let correctAnswer = "";
 
 function displayCurrentQuestion() {
-  //diplay question + answers
-  $("h2").html(`${STORE.questions[questionCount].question}`);
-  $("ol").empty();
   //tag element location
   $("section").html(
     `Question Number: ${questionCount + 1} Current Score: ${currentScore} `
   );
-
-  let numberOfAnswers = STORE.questions[questionCount].answers.length;
-  //setting questionCount as an array linked to length of quiz; appending li
-  for (let i = 0; i < numberOfAnswers; i++) {
-    console.log(STORE.questions[questionCount].answers[i]);
-    $("ol").append(
-      `<li> <input type="radio" id="answers" value="${STORE.questions[questionCount].answers[i]}"name="guess">
-      <label for="answers"> ${STORE.questions[questionCount].answers[i]}</label></li>`
-    );
+  //diplay question + answers
+  $("h2").html(`${STORE.questions[questionCount].question}`);
+  $("ol").empty();
+  for (let i = 0; i < STORE.questions[questionCount].answers.length; i++) {
+    $("ol")
+      .append(`<li class="correct"> <input type="radio" id="answers" value='${STORE.questions[questionCount].answers[i]}' name="guess">
+  <label for="answers${i}">${STORE.questions[questionCount].answers[i]}</label><br></li>`);
   }
 }
+
 function transitionNewQuestion() {
   //plain english
   $("#submit").on("click", function () {
@@ -38,26 +26,27 @@ function transitionNewQuestion() {
       alert("Please select a response");
       return false;
     }
-
     if (radioValue === STORE.questions[questionCount].correctAnswer) {
       $(".feedback").html("That is correct!");
       currentScore++;
       // console.log(currentScore, questionCount);
-      $("h2, ol, header").empty();
+      $("h2, l, header").empty();
     } else {
       $(".feedback").html("Not quite!");
-      $("h2, ol, header").empty();
+      $("h2, ul, header").empty();
     }
-    console.log(currentQuestion);
-    let isLastQuestion =
-      questionCount === STORE.questions.length - 1 ? true : false;
-
-    // displayCurrentQuestion();
-    // let <variable> = (test case) ? <value if test is true> : <value if test is false>
+    let isLastQuestion = questionCount;
+    //ternary
+    // questionCount === STORE.questions.length - 1 ? true : false;
+    //expanded
+    // if (questionCount === STORE.question.length - 1) {
+    //   isLastQuestion = true;
+    // } else {
+    //   isLastQuestion = false;
+    // }
     if (isLastQuestion) {
       // console.log("isLastQuestion");
       // console.log(questionCount);
-      // console.log(isLastQuestion);
       quizResults();
     } else {
       questionCount++;
@@ -66,16 +55,16 @@ function transitionNewQuestion() {
   });
 }
 
-let questionTotal = STORE.questions.length;
-
 function quizResults() {
   // console.log("hi");
+  let totalScore = `${currentScore} out of ${STORE.questions.length}`;
   $(".main-container-quiz").hide();
   $(".finalFeedback").show();
   $(".finalFeedback").append(
     //Retake Quiz to display on new line. How?
-    `Thanks for taking my quiz. Your score: ${currentScore} out of ${questionTotal}`
+    `Thanks for taking my quiz. Your score: ${totalScore}!`
   );
+  $(".retakeQuiz").append("Retake Quiz?");
   $("#endQuiz").show();
   resetQuiz();
 }
@@ -83,7 +72,6 @@ function quizResults() {
 function resetQuiz() {
   $("#retake").on("click", function () {
     // console.log("show first question");
-    $("#endQuiz").hide();
     $("h2, ul, header, .feedback, .finalFeedback").empty();
     // console.log("emptied");
     //set counters to 0
@@ -103,7 +91,6 @@ function resetQuiz() {
 }
 
 function startNewQuizBtn() {
-  $("#endQuiz").hide();
   //start of quiz
   $("#start").on("click", () => {
     $("#quizInstructions").hide();

@@ -1,0 +1,102 @@
+Current To-Do's: 
+
+
+Trello
+
+(*) score "" out of undefined
+(*) feedback for final question needs to display
+(*) Question Number && Current Score either on new line or in left and right corners
+(*) style endQuiz the same as quizInstructions
+
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+(*) help on getting lines 22-34 to work within code (--> transitionNewQuestion?)
+(whether they are correct or not, the correct answer should be highlighted)
+ref: https://stackoverflow.com/questions/56450731/how-can-i-highlight-correct-and-incorrect-answers-to-an-online-quiz
+
+(*) plain english to descirbe what for loop is doing on line scrip.js 14
+
+(*) styling isssues
+- display feedback at bottom of container
+- place container in the middle of the browser
+- space between Retake quiz and final feedback
+
+(*) upload to GitHub (public key issue)
+using git locally to save
+
+*extra* display explanation/logic behind answer before transitioning to next question
+ --> (addRationale() on line 76?)
+
+
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Completed:
+(x) display quizInstructions page upon retaking quiz
+(x) show entry page --> startButton hide quiz instructions + clear instructions
+(x) need to clear quizResults + feedback upon restart of quiz
+(x) hide 'Let's go' Button During quiz
+(x) Build in feedback after each guess
+(x) show current score
+(x) Results page button not looping back through quiz questions
+------------------------------------------------------------------------------------
+(x) doesn't display next question or increase question count if answer is incorrect
+(x) not clearing last question and displaying results page to retake quiz
+(x) still need 'Let's go' button on results quiz page to allow user to retake quiz
+
+Notes from Q&A: 
+//'hookup function (line 89) executing function (line 90)
+//get rid of and replace --> .html
+//"creating hooks are the new way to do things.."
+//react is a virtual DOM that updates asynchronously optimizing performance cost or only upon change --> high scalability
+//HTML write up --> event delegation --> jQuery methods for manipulation (repeat)
+//make sure to put in initialization function; use console.logs
+//re: console.log() is it updating the variable? --> operate next function
+
+Other:
+
+Highlighting responses:
+
+1.
+// function highlightCorrectAnswer() {
+//   for (let i = 0; i < STORE.question[questionCount].answers[i].length; i++) {
+//     if (STORE.questions[questionCount].answers[i] === STORE.correctAnswer)
+//       $(ol).nth - child(i).css("ssssss");
+//   }
+
+//   STORE.question[x];
+
+//add border around text of correct answer after response is submitted
+
+2. 
+//find which is correct --> find nth child of that (in order from the beginning of the container)
+// $('').${STORE.questions[questionCount].answers[i]}.highlight();
+// if answer is correct
+// let correctResponse = radioValue[i];
+// if (correctResponse === STORE.questions[questionCount].correctAnswer) {
+//   $("").css({ backgroundColor: "green" });
+// } else {
+//   $("").css({ backgroundColor: "red" });
+// }
+// $(foo)
+// foo = 'li:nth-child(3)'
+// $( 'li:nth-child(3)').
+// }
+
+3.
+
+// ternary (if answer matches correctAnswer --> 'correct' else 'incorrect)
+// const classToApply =
+//   correctAnswer == STORE.questions[questionCount].correctAnswer
+//     ? "correct"
+//     : "incorrect";
+
+// console.log(classToApply);
+
+//manipulating parent of radioValue + setTimeout between questions
+// radioValue.parentElement.classList.add(classToApply);
+// setTimeout(() => {
+//   radioValue.parentElement.classList.remove(classToApply);
+//   displayCurrentQuestion();
+// }, 1000);
+//Resource:
+//https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx
