@@ -85,7 +85,7 @@ const STORE = {
       ],
       correctAnswer: "Vegetable species",
     },
-  ],
+  ], //
 };
 
 //Source: https://www.readersdigest.ca/health/healthy-living/medical-trivia/
