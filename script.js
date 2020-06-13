@@ -1,15 +1,6 @@
 let questionCount = 0;
 let currentScore = 0;
 let currentQuestion = 0;
-// let correctAnswer = "";
-
-// function getCurrentQuestion() {
-//   // console.log(sto)
-//   return STORE.questions[questionCount].question;
-// }
-// function getCurrentAnswers() {
-//   return STORE.questions[questionCount].answers;
-// }
 
 function displayCurrentQuestion() {
   //diplay question + answers
@@ -96,7 +87,7 @@ function resetQuiz() {
     // $("#endQuiz").hide();
     $(".main-container-quiz").show();
     // $("#retake").show();
-    //empty Quizresults
+    //empty Quiz results
     //run displayCurrentQuestion
     displayCurrentQuestion();
   });

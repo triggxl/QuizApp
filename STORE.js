@@ -10,6 +10,8 @@ const STORE = {
         "Threatens to wipe out a species",
       ],
       correctAnswer: "Can be transmitted from animals to humans", //rationale
+      //correctAnswer[0]
+      //script --> create variable named correctAnswer = ${STORE.questions[questionCount].correctAnswer}
     },
     {
       question: "Orthostatic hypotension is:",

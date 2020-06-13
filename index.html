@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random Medical Knowledge Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script
@@ -16,16 +16,17 @@
     <div id="quizInstructions">
       <h1>Ready to test your random medical knowledge?</h1>
       <div class="start-quiz-btn">
-        <button id="start" type="button">Let's Go!</button>
+        <button class="btn" id="start" type="button">Let's Go!</button>
       </div>
     </div>
     <form aria-live="assertive">
       <fieldset class="main-container-quiz" id="main-container-quiz">
         <h2></h2>
         <ol type="A"></ol>
-        <button id="submit" type="button" field="req">Submit</button>
+        <div class="btn-wrapper">
+        <button class="btn" id="submit" type="button" field="req">Submit</button>
+      </div>
         <hr />
-
         <div class="feedback"></div> <!--display at bottom of container-->
       </br>
       </br>
@@ -36,7 +37,7 @@
       <div class="finalFeedback"></div>
       <div class="retakeQuiz"></div>
       <div id="retakeutton">
-      <button id="retake" type="button">Retake Quiz</button>
+      <button class="btn" id="retake" type="button">Retake Quiz</button>
     </div>
     </div>
   </body>
