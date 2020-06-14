@@ -1,5 +1,14 @@
 Current To-Do's: 
 
+for clases:
+js camelcase 
+css hypen
+
+    // let <variable> = (test case) ? <value if test is true> : <value if test is false>
+
+      //script --> create variable named correctAnswer = ${STORE.questions[questionCount].correctAnswer}
+
+      //refactoring major part of continous integration 
 
 Trello
 

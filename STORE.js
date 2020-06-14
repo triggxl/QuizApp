@@ -1,4 +1,3 @@
-/*store data within app*/
 const STORE = {
   questions: [
     {
@@ -9,9 +8,7 @@ const STORE = {
         "Can be transmitted from animals to humans",
         "Threatens to wipe out a species",
       ],
-      correctAnswer: "Can be transmitted from animals to humans", //rationale
-      //correctAnswer[0]
-      //script --> create variable named correctAnswer = ${STORE.questions[questionCount].correctAnswer}
+      correctAnswer: 2,
     },
     {
       question: "Orthostatic hypotension is:",
@@ -21,7 +18,7 @@ const STORE = {
         "Lowered blood pressure caused by standing up",
         "Poor circulation in the hands and feet",
       ],
-      correctAnswer: "Lowered blood pressure caused by standing up", //rationale transitions in 'dissolves into focus'
+      correctAnswer: 3,
     },
     {
       question:
@@ -32,7 +29,7 @@ const STORE = {
         "Stinky feet",
         "A fasting regimen",
       ],
-      correctAnswer: "Stinky feet",
+      correctAnswer: 2,
     },
     {
       question: "What can be described by the condition hyperlordosis?",
@@ -42,9 +39,8 @@ const STORE = {
         "A sudden personality change",
         "An exaggerated curve in the lower back",
       ],
-      correctAnswer: "An exaggerated curve in the lower back",
+      correctAnswer: 3,
     },
-    //have an alert message hover under with an explanation to each answer
     {
       question: "What does the term black carbon refer to?",
       answers: [
@@ -53,7 +49,7 @@ const STORE = {
         "A noxious fume produced by malfunctioning home-heating systems",
         "A suspected carcinogenic component of mobile phones",
       ],
-      correctAnswer: "An air pollutant emitted by vehicles",
+      correctAnswer: 0,
     },
     {
       question: "What are idiopathies?",
@@ -63,7 +59,7 @@ const STORE = {
         "Diseases of unknown origins",
         "A series of opportunistic bacterial infections",
       ],
-      correctAnswer: "Diseases of unknown origins",
+      correctAnswer: 2,
     },
     {
       question:
@@ -74,7 +70,7 @@ const STORE = {
         "Slowing one’s heart rate after exercise",
         "Sitting with an injured ankle",
       ],
-      correctAnswer: "Placing someone who is unconscious but breathing",
+      correctAnswer: 0,
     },
     {
       question:
@@ -85,9 +81,8 @@ const STORE = {
         "A gene associated with memory function",
         "Vegetable species",
       ],
-      correctAnswer: "Vegetable species",
+      correctAnswer: 3,
     },
-  ], //
+  ],
 };
-
 //Source: https://www.readersdigest.ca/health/healthy-living/medical-trivia/

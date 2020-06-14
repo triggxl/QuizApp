@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Random Medical Knowledge Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script
@@ -12,7 +12,6 @@
     ></script>
   </head>
   <body>
-    <!-- <div class="container"> -->
     <div id="quizInstructions">
       <h1>Ready to test your random medical knowledge?</h1>
       <div class="start-quiz-btn">
@@ -21,15 +20,17 @@
     </div>
     <form aria-live="assertive">
       <fieldset class="main-container-quiz" id="main-container-quiz">
-        <h2></h2>
-        <ol type="A"></ol>
+        <div class="qa-section">
+          <h2></h2>
+          <ol type="A"></ol>
+        </div>
         <div class="btn-wrapper">
-        <button class="btn" id="submit" type="button" field="req">Submit</button>
-      </div>
+          <button class="btn" id="submit" type="button" field="req">
+            Submit
+          </button>
+        </div>
         <hr />
-        <div class="feedback"></div> <!--display at bottom of container-->
-      </br>
-      </br>
+        <div class="feedback"></div>
         <section></section>
       </fieldset>
     </form>
@@ -37,8 +38,8 @@
       <div class="finalFeedback"></div>
       <div class="retakeQuiz"></div>
       <div id="retakeutton">
-      <button class="btn" id="retake" type="button">Retake Quiz</button>
-    </div>
+        <button class="btn" id="retake" type="button">Retake Quiz</button>
+      </div>
     </div>
   </body>
   <script src="STORE.js"></script>

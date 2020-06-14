@@ -1,7 +1,8 @@
 :root {
-  --blue: #000099;
+  --blue: #0044aa;
   --black: #222;
   --gray: #ccc;
+  font-size: 18px;
 }
 * {
   box-sizing: border-box;
@@ -24,6 +25,7 @@ body {
   background-position: right;
   background-size: 82.5% 100%; /*width height*/
   background-repeat: no-repeat;
+  color: white;
 }
 
 form,
@@ -41,22 +43,41 @@ form,
   border: 3px solid var(--black);
   border-radius: 20px;
   padding: 30px 70px 20px 70px; /*top right bottom left*/
-  background: var(--gray);
+  background: #0594ed;
 }
 
 .btn {
-  border: 3px solid var(--blue);
+  border: 3px solid white;
   border-radius: 20px;
   margin-top: 20px;
   padding: 10px 35px;
-  color: black;
-  background: transparent;
+  color: white;
+  background: #07bbe8;
+  margin-top: 20.5;
+}
+
+.qa-section {
+  background: var(--blue);
+  border-radius: 15px;
+  padding: 30px;
 }
 
 .btn-wrapper {
-  /*justified in center*/
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center; /*main axis first*/
-  align-items: center; /*cross axis*/
+  align-items: flex-end; /*cross axis*/
+}
+
+@media screen and (max-width: 600px) {
+  #quizInstructions,
+  #endQuiz,
+  .main-container-quiz {
+    width: 100%;
+    padding: 15px 35px 10px 35px;
+  }
+  :root {
+    font-size: 14px;
+  }
 }
