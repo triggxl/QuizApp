@@ -6,7 +6,6 @@ function displayCurrentQuestion() {
   //diplay question and answers
   $("h2").html(`${STORE.questions[questionCount].question}`);
   $("ol").empty();
-  //tag element location
   $("section").html(
     `Question Number: ${questionCount + 1} Current Score: ${currentScore} `
   );
@@ -40,7 +39,7 @@ function transitionNewQuestion() {
       $("h2, ol, header").empty();
     }
     let isLastQuestion =
-      questionCount === STORE.questions.length - 1 ? true : false;
+      questionCount === questionTotal - 1 ? true : false;
 
     if (isLastQuestion) {
       quizResults();
@@ -57,7 +56,7 @@ function quizResults() {
   $(".main-container-quiz").hide();
   $(".finalFeedback").show();
   $(".finalFeedback").append(
-    `Thanks for taking my quiz. Your score: ${currentScore} out of ${questionTotal}`
+    `Thanks for taking my quiz! Your score: ${currentScore} out of ${questionTotal}`
   );
   $("#endQuiz").show();
   resetQuiz();
