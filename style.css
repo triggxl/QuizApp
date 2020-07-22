@@ -63,11 +63,11 @@ form,
 }
 
 .btn-wrapper {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center; /*main axis first*/
   align-items: flex-end; /*cross axis*/
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 600px) {
