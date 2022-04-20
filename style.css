@@ -28,6 +28,9 @@ body {
   color: white;
 }
 
+.feedback {
+  font-size: 25px;
+}
 form,
 #endQuiz {
   display: none;

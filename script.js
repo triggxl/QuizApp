@@ -7,7 +7,7 @@ function displayCurrentQuestion() {
   $("h2").html(`${STORE.questions[questionCount].question}`);
   $("ol").empty();
   $("section").html(
-    `Question Number: ${questionCount + 1} Current Score: ${currentScore} `
+    `Current Score: ${currentScore} Question Number: ${questionCount + 1}  `
   );
 
   let numberOfAnswers = STORE.questions[questionCount].answers.length;
