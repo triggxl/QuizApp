@@ -59,6 +59,8 @@ function quizResults() {
     `Thanks for taking my quiz! Your score: ${currentScore} out of ${questionTotal}`
   );
   $("#endQuiz").show();
+  // store score
+  localStorage.setItem("score", currentScore);
   resetQuiz();
 }
 
@@ -71,6 +73,8 @@ function resetQuiz() {
     currentQuestion = 0;
     $(".main-container-quiz").show();
     displayCurrentQuestion();
+    let prevScore = (localStorage.getItem("score"));
+    document.getElementById("prevScore").innerText = prevScore ? prevScore : "No Previous Score";
   });
 }
 
@@ -85,6 +89,8 @@ function startNewQuizBtn() {
 }
 
 $(function () {
+  let prevScore = (localStorage.getItem("score"));
+  document.getElementById("prevScore").innerText = prevScore ? prevScore : "No Previous Score";
   startNewQuizBtn();
   transitionNewQuestion();
 });
